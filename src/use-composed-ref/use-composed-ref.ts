@@ -1,4 +1,4 @@
-import { useMemo } from "@rbxts/roact-hooked";
+import { useMemo } from "@rbxts/roact";
 import { useLatestCallback } from "../use-latest-callback";
 
 export type RefFunction<T> = (rbx?: T) => void;

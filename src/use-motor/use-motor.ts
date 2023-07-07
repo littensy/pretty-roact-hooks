@@ -1,6 +1,5 @@
 import { GroupMotor, Instant, Linear, SingleMotor, Spring } from "@rbxts/flipper";
-import Roact from "@rbxts/roact";
-import { useBinding, useCallback, useEffect, useMemo } from "@rbxts/roact-hooked";
+import Roact, { useBinding, useCallback, useEffect, useMemo } from "@rbxts/roact";
 import { RunService } from "@rbxts/services";
 import {
 	GroupMotorValue,

@@ -1,4 +1,4 @@
-import { useBinding, useEffect } from "@rbxts/roact-hooked";
+import { useBinding, useEffect } from "@rbxts/roact";
 import { RunService } from "@rbxts/services";
 import { useEventListener } from "../use-event-listener";
 

@@ -1,4 +1,4 @@
-import { useEffect } from "@rbxts/roact-hooked";
+import { useEffect } from "@rbxts/roact";
 import { useDeferCallback } from "../use-defer-callback";
 
 /**

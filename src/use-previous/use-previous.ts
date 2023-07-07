@@ -1,4 +1,4 @@
-import { useMemo, useMutable } from "@rbxts/roact-hooked";
+import { useMemo, useRef } from "@rbxts/roact";
 
 export type Predicate<T> = (previous: T | undefined, current: T) => boolean;
 
@@ -18,8 +18,8 @@ export const isStrictEqual = (a: unknown, b: unknown) => a === b;
  * @returns The previous value.
  */
 export function usePrevious<T>(value: T, predicate: Predicate<T> = isStrictEqual): T | undefined {
-	const previousRef = useMutable<T>();
-	const currentRef = useMutable<T>();
+	const previousRef = useRef<T>();
+	const currentRef = useRef<T>();
 
 	useMemo(() => {
 		if (!predicate(currentRef.current, value)) {

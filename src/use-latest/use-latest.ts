@@ -1,4 +1,4 @@
-import { useMemo, useMutable } from "@rbxts/roact-hooked";
+import { useMemo, useRef } from "@rbxts/roact";
 import { Predicate, isStrictEqual } from "../use-previous";
 
 /**
@@ -12,7 +12,7 @@ import { Predicate, isStrictEqual } from "../use-previous";
  * @returns A mutable reference to the value.
  */
 export function useLatest<T>(value: T, predicate: Predicate<T> = isStrictEqual) {
-	const ref = useMutable(value);
+	const ref = useRef(value);
 
 	useMemo(() => {
 		if (!predicate(ref.current, value)) {

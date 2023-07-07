@@ -1,4 +1,4 @@
-import { useCallback, useMutable } from "@rbxts/roact-hooked";
+import { useCallback, useRef } from "@rbxts/roact";
 
 /**
  * Returns a memoized callback that wraps the latest version of the input
@@ -7,7 +7,7 @@ import { useCallback, useMutable } from "@rbxts/roact-hooked";
  * @returns The memoized callback.
  */
 export function useLatestCallback<T extends Callback>(callback: T): T {
-	const callbackRef = useMutable(callback);
+	const callbackRef = useRef(callback);
 	callbackRef.current = callback;
 
 	return useCallback((...args: unknown[]) => {

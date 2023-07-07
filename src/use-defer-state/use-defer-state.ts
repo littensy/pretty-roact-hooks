@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useCallback, useState } from "@rbxts/roact-hooked";
+import { Dispatch, SetStateAction, useCallback, useState } from "@rbxts/roact";
 import { useDeferCallback } from "../use-defer-callback";
 import { useLatest } from "../use-latest";
 import { useUnmountEffect } from "../use-unmount-effect";

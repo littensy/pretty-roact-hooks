@@ -26,16 +26,17 @@
 	"types": "out/index.d.ts",
 	"files": [
 		"out",
-		"!**/*.tsbuildinfo"
+		"!**/*.tsbuildinfo",
+		"!**/*.spec.lua",
+		"!**/*.spec.d.ts"
 	],
 	"publishConfig": {
 		"access": "public"
 	},
 	"devDependencies": {
-		"@rbxts/compiler-types": "2.1.0-types.1",
+		"@rbxts/compiler-types": "2.1.1-types.0",
 		"@rbxts/flipper": "^2.0.1",
-		"@rbxts/roact": "1.4.4-ts.0",
-		"@rbxts/roact-hooked": "^2.6.0",
+		"@rbxts/roact": "npm:@rbxts/react-ts",
 		"@rbxts/testez": "0.4.2-ts.0",
 		"@rbxts/types": "^1.0.704",
 		"@typescript-eslint/eslint-plugin": "^5.61.0",
@@ -44,7 +45,7 @@
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-roblox-ts": "^0.0.35",
-		"prettier": "^2.8.8",
+		"prettier": "^3.0.0",
 		"roblox-ts": "^2.1.0",
 		"typescript": "^5.1.6"
 	},
@@ -54,7 +55,6 @@
 	},
 	"peerDependencies": {
 		"@rbxts/flipper": "^2.0.1",
-		"@rbxts/roact": "1.4.4-ts.0",
-		"@rbxts/roact-hooked": "^2.3.3"
+		"@rbxts/roact": "npm:@rbxts/react-ts"
 	}
 }

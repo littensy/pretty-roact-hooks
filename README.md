@@ -34,13 +34,13 @@ Or, see the [full list of hooks](src/).
 This package is available for Roblox TypeScript projects on [NPM](https://www.npmjs.com/package/@rbxts/pretty-roact-hooks).
 
 ```sh
-npm install @rbxts/pretty-roact-hooks @rbxts/flipper @rbxts/roact-hooked
+npm install @rbxts/pretty-roact-hooks @rbxts/flipper @rbxts/roact
 ```
 
 or
 
 ```sh
-pnpm add @rbxts/pretty-roact-hooks @rbxts/flipper @rbxts/roact-hooked
+pnpm add @rbxts/pretty-roact-hooks @rbxts/flipper @rbxts/roact
 ```
 
 &nbsp;

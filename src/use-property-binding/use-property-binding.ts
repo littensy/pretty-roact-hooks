@@ -1,5 +1,4 @@
-import { Binding, createBinding } from "@rbxts/roact";
-import { useMemo } from "@rbxts/roact-hooked";
+import { Binding, createBinding, useMemo } from "@rbxts/roact";
 import {
 	JsxAnyInstanceChangeEvents,
 	JsxAnyInstancePropertyBindings,

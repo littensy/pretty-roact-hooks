@@ -1,4 +1,4 @@
-import { useMemo } from "@rbxts/roact-hooked";
+import { useMemo } from "@rbxts/roact";
 import { Debounced, ThrottleOptions, throttle } from "@rbxts/set-timeout";
 import { UseDebounceResult } from "../use-debounce-callback";
 import { useLatest } from "../use-latest";

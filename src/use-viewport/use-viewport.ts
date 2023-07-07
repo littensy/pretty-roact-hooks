@@ -1,4 +1,4 @@
-import { useBinding, useEffect, useMemo } from "@rbxts/roact-hooked";
+import { useBinding, useEffect, useMemo } from "@rbxts/roact";
 import { useCamera } from "../use-camera";
 import { useEventListener } from "../use-event-listener";
 

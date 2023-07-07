@@ -1,4 +1,4 @@
-import { useCallback, useMutable } from "@rbxts/roact-hooked";
+import { useCallback, useRef } from "@rbxts/roact";
 import { RunService } from "@rbxts/services";
 import { useLatest } from "../use-latest";
 
@@ -12,7 +12,7 @@ export function useDeferCallback<T extends unknown[]>(
 	callback: (...args: T) => void,
 ): LuaTuple<[execute: (...args: T) => void, cancel: () => void]> {
 	const callbackRef = useLatest(callback);
-	const connectionRef = useMutable<RBXScriptConnection>();
+	const connectionRef = useRef<RBXScriptConnection>();
 
 	const cancel = useCallback(() => {
 		connectionRef.current?.Disconnect();

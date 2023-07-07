@@ -1,4 +1,4 @@
-import { useMemo } from "@rbxts/roact-hooked";
+import { useMemo } from "@rbxts/roact";
 import { DebounceOptions, Debounced, debounce } from "@rbxts/set-timeout";
 import { useLatest } from "../use-latest";
 import { useUnmountEffect } from "../use-unmount-effect";

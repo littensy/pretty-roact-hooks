@@ -1,4 +1,4 @@
-import { useState } from "@rbxts/roact-hooked";
+import { useState } from "@rbxts/roact";
 import { Workspace } from "@rbxts/services";
 import { useEventListener } from "../use-event-listener";
 

@@ -1,4 +1,4 @@
-import { useCallback, useMutable, useState } from "@rbxts/roact-hooked";
+import { useCallback, useRef, useState } from "@rbxts/roact";
 import { useUnmountEffect } from "../use-unmount-effect";
 
 export type AsyncState<T> =
@@ -35,7 +35,7 @@ export type AsyncCallback<T, U extends unknown[]> = (...args: U) => Promise<T>;
 export function useAsyncCallback<T, U extends unknown[]>(
 	callback: AsyncCallback<T, U>,
 ): LuaTuple<[AsyncState<T>, AsyncCallback<T, U>]> {
-	const currentPromise = useMutable<Promise<T>>();
+	const currentPromise = useRef<Promise<T>>();
 
 	const [state, setState] = useState<AnyAsyncState<T>>({
 		status: Promise.Status.Started,

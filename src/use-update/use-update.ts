@@ -1,4 +1,4 @@
-import { useCallback, useState } from "@rbxts/roact-hooked";
+import { useCallback, useState } from "@rbxts/roact";
 
 /**
  * Returns a function that can be used to force a component to update. The
