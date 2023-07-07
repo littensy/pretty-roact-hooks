@@ -1,6 +1,6 @@
 {
 	"name": "@rbxts/pretty-react-hooks",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Useful hooks for @rbxts/react-ts",
 	"main": "out/init.lua",
 	"scripts": {
