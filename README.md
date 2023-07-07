@@ -1,13 +1,13 @@
-## 🌺 [pretty-roact-hooks](https://npmjs.com/package/@rbxts/pretty-roact-hooks)
+## 🌺 [pretty-react-hooks](https://npmjs.com/package/@rbxts/pretty-roact-hooks)
 
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/littensy/pretty-roact-hooks/ci.yml?branch=master&style=for-the-badge&logo=github)
 [![npm version](https://img.shields.io/npm/v/@rbxts/pretty-roact-hooks.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@rbxts/pretty-roact-hooks)
 [![npm downloads](https://img.shields.io/npm/dt/@rbxts/pretty-roact-hooks.svg?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/@rbxts/pretty-roact-hooks)
 [![GitHub license](https://img.shields.io/github/license/littensy/pretty-roact-hooks?style=for-the-badge)](LICENSE.md)
 
-An opinionated collection of useful hooks and utilites for Roblox-TS and [Roact Hooked](https://github.com/littensy/rbxts-roact-hooked/).
+An opinionated collection of useful hooks and utilites for Roblox-TS and [React TS](https://github.com/littensy/rbxts-react).
 
-Every hook has documentation and tests. If you find a bug or have a feature request, please [open an issue](https://github.com/littensy/pretty-roact-hooks/issues/new/).
+If you find a bug or have a feature request, please [open an issue](https://github.com/littensy/pretty-roact-hooks/issues/new/).
 
 &nbsp;
 
@@ -21,8 +21,7 @@ Check out some featured hooks:
 
 This package also exports some useful utilities:
 
--   [🧪 `renderHook`](src/utils/testez.tsx) - Render a hook in a test environment
--   [📕 `hoarcekat`](src/utils/hoarcekat.tsx) - Create a Hoarcekat story with hook detection
+-   [📕 `hoarcekat`](src/utils/hoarcekat.tsx) - Create a Hoarcekat story
 -   [📦 `binding utils`](src/utils/binding.ts) - Work with values that may or may not be bindings
 
 Or, see the [full list of hooks](src/).
@@ -31,16 +30,16 @@ Or, see the [full list of hooks](src/).
 
 ## 📦 Installation
 
-This package is available for Roblox TypeScript projects on [NPM](https://www.npmjs.com/package/@rbxts/pretty-roact-hooks).
+This package is available for Roblox TypeScript projects on [NPM](https://www.npmjs.com/package/@rbxts/pretty-react-hooks).
 
 ```sh
-npm install @rbxts/pretty-roact-hooks @rbxts/flipper @rbxts/roact
+npm install @rbxts/pretty-react-hooks @rbxts/flipper @rbxts/roact:npm:@rbxts/react-ts
 ```
 
 or
 
 ```sh
-pnpm add @rbxts/pretty-roact-hooks @rbxts/flipper @rbxts/roact
+pnpm add @rbxts/pretty-react-hooks @rbxts/flipper @rbxts/roact:npm:@rbxts/react-ts
 ```
 
 &nbsp;
