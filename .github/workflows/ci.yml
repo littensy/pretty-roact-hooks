@@ -17,14 +17,14 @@ jobs:
       - name: GitHub Checkout
         uses: actions/checkout@v3
 
-      - name: Setup PNPM
-        uses: pnpm/action-setup@v2.2.4
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          version: 8.6.1
-          run_install: true
+          node-version: 18
+          cache: "yarn"
 
       - name: Run ESLint
-        run: pnpm eslint src
+        run: yarn eslint src
 
       - name: Build & Compile
-        run: pnpm build --verbose
+        run: yarn build --verbose
