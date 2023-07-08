@@ -36,7 +36,7 @@
 	"devDependencies": {
 		"@rbxts/compiler-types": "2.1.1-types.0",
 		"@rbxts/flipper": "^2.0.1",
-		"@rbxts/roact": "npm:@rbxts/react-ts",
+		"@rbxts/roact": "npm:@rbxts/react-ts@*",
 		"@rbxts/testez": "0.4.2-ts.0",
 		"@rbxts/types": "^1.0.704",
 		"@typescript-eslint/eslint-plugin": "^5.61.0",
@@ -55,6 +55,6 @@
 	},
 	"peerDependencies": {
 		"@rbxts/flipper": "^2.0.1",
-		"@rbxts/roact": "npm:@rbxts/react-ts"
+		"@rbxts/roact": "npm:@rbxts/react-ts@*"
 	}
 }
