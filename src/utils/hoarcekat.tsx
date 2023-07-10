@@ -1,4 +1,5 @@
-import Roact from "@rbxts/roact";
+import { createRoot } from "@rbxts/react-roblox";
+import Roact, { StrictMode } from "@rbxts/roact";
 
 /**
  * Returns a function that can be used as a Hoarcekat story. This function will
@@ -10,10 +11,16 @@ import Roact from "@rbxts/roact";
  */
 export function hoarcekat(TestComponent: Roact.FunctionComponent) {
 	return (target: Instance) => {
-		const handle = Roact.mount(<TestComponent />, target);
+		const root = createRoot(target);
+
+		root.render(
+			<StrictMode>
+				<TestComponent />
+			</StrictMode>,
+		);
 
 		return () => {
-			Roact.unmount(handle);
+			root.unmount();
 		};
 	};
 }
